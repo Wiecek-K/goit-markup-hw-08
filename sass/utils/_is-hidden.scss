@@ -1,0 +1,13 @@
+.is-hidden {
+  pointer-events: none;
+
+  & .modal {
+    transform: scale(0);
+    transition: transform 0.2s;
+    transition-timing-function: ease-out;
+  }
+  & .backdrop {
+    visibility: hidden;
+    transition-delay: 0.2s;
+  }
+}

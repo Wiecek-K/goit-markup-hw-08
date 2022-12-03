@@ -1,0 +1,27 @@
+h1,
+h5,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $strong-color;
+  letter-spacing: 0.03em;
+}
+
+*:focus {
+  outline: none;
+  @media screen and (min-width: $desktop) {
+    outline-color: $brand-color;
+    outline-offset: 0;
+    outline-style: solid;
+    outline-width: 1px;
+    border: none;
+    border-radius: 0.2%;
+  }
+}

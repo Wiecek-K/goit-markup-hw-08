@@ -1,0 +1,35 @@
+@use './utils/variables.scss' as *;
+
+@import './utils/reset.scss';
+@import './utils/placeholders';
+
+@import './utils/backdrop.scss';
+@import './utils/is-hidden.scss';
+@import './utils/d-none.scss';
+
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/header';
+@import './components/menu';
+@import './components/contact';
+@import './components/main-panel';
+@import './components/button';
+@import './components/text-card';
+@import './components/text-cards';
+@import './components/offers';
+@import './components/offer';
+@import './components/persons';
+@import './components/person';
+@import './components/socials';
+@import './components/clients';
+@import './components/client';
+@import './components/newsletter';
+@import './components/filter';
+@import './components/product';
+@import './components/products';
+@import './components/modal';
+@import './components/footer';
+@import './components/mobile-menu';
+
+@import './utils/media-queries';

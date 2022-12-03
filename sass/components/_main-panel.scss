@@ -1,0 +1,87 @@
+.main-panel {
+  background-color: $footer-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $contrast-color;
+  margin: 0 auto;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/home/hero-sm@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/home/hero-sm@2x.jpg');
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/home/hero-md@1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/home/hero-md@2x.jpg');
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/home/hero-lg@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/home/hero-lg@2x.jpg');
+    }
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    max-width: 365px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36em;
+      max-width: 696px;
+    }
+  }
+}
+
+// .main-panel__heading {
+
+// }

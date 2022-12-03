@@ -1,0 +1,25 @@
+.client {
+  width: calc((100% - 30px) / 2);
+  //(100%-gap*(#columns-1))/#columns
+  height: 92px;
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+  fill: $svg-color;
+  transition: border-color 0.25s, fill 0.25s;
+  transition-timing-function: $cubic-bezier;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    border-color: $brand-color;
+    fill: $brand-color;
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 3);
+    //(100%-gap*(#columns-1))/#columns
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+}

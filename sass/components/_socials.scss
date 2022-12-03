@@ -1,0 +1,38 @@
+.socials {
+  gap: 0 10px;
+  list-style: none;
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials__border {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  fill: $svg-color;
+  @media screen and (min-width: $desktop) {
+    transition: background-color 0.25s, fill 0.25s;
+    transition-timing-function: $cubic-bezier;
+    &:hover,
+    &:focus {
+      background-color: $brand-color;
+      fill: $contrast-color;
+    }
+  }
+}
+
+.socials__border--contrast-color {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $contrast-color;
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      background-color: $brand-color;
+    }
+  }
+}

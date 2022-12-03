@@ -1,0 +1,56 @@
+.contact {
+  display: none;
+}
+@media screen and (min-width: $tablet) {
+  .contact__link {
+    text-decoration: none;
+    color: $weak-color;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14em;
+    display: flex;
+    align-items: center;
+  }
+  .contact {
+    display: flex;
+  }
+  .contact__icon {
+    align-items: center;
+    margin-right: 0.2rem;
+    fill: $weak-color;
+    margin-bottom: 2px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .contact__icon {
+    transition: fill 0.25s;
+    transition-timing-function: $cubic-bezier;
+  }
+  .contact__link {
+    transition: color 0.25s;
+    transition-timing-function: $cubic-bezier;
+  }
+  .contact:hover {
+    & .contact__link {
+      color: $brand-color;
+    }
+    & .contact__icon {
+      fill: $brand-color;
+    }
+  }
+  .contact:has(.contact__link:focus) {
+    & .contact__link {
+      color: $brand-color;
+    }
+    & .contact__icon {
+      fill: $brand-color;
+    }
+  }
+}
+// .contact {
+//   margin-left: 50px;
+//
+// }
+
+// }
