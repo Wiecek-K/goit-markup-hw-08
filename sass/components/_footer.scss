@@ -48,18 +48,11 @@
 .footer__left-panel {
   display: inline-block;
 }
-// .footer {
-
-//   padding: 60px 15px;
-// }
-// .footer__wrapper {
-//
-//   gap: 70px;
-//   flex-wrap: wrap;
-// }
 
 .footer__socials {
   display: inline-block;
   margin-top: 5px;
-  // margin-top: 12px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+  }
 }
